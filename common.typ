@@ -1,4 +1,5 @@
 #import "@local/common:0.0.0": *
+#import "@preview/fletcher:0.5.8" as fl: diagram, node, edge
 
 #let title-rule(
   title: [title]
@@ -18,3 +19,13 @@
 
 #let AA = $cal(A)$
 #let wh = st
+#let dom = math.op([dom])
+#let cod = math.op([cod])
+#let UU = $cal(U)$
+
+#let ob = math.op([Ob])
+#let mor = math.op([Mor])
+
+#let dot(pos) = fl.node(pos, circle(stroke: black, fill: black, radius: 2pt))
+
+#let cat(n) = strong($#n$)
