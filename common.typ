@@ -28,8 +28,15 @@
 #let D = $cal(D)$
 #let E = $cal(E)$
 
-#let ob = math.op([Ob])
-#let mor = math.op([Mor])
+// #let ob = math.op([Ob])
+#let ob(cat) = $O_#cat$
+// #let mor = math.op([Mor])
+#let mor(cat) = $M_#cat$
+#let op(cat) = $#cat^"op"$
+
+#let obj = (
+  tilde: $#h(0pt)tilde#h(3pt)$
+)
 
 #let dot(pos) = fl.node(pos, circle(stroke: black, fill: black, radius: 2pt))
 
