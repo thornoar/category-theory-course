@@ -23,10 +23,12 @@
 #let cod = math.op([cod])
 #let UU = $cal(U)$
 
+#let A = $cal(A)$
 #let B = $cal(B)$
 #let C = $cal(C)$
 #let D = $cal(D)$
 #let E = $cal(E)$
+#let F = $cal(F)$
 
 // #let ob = math.op([Ob])
 #let ob(cat) = $O_#cat$
