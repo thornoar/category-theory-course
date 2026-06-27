@@ -35,11 +35,40 @@
 // #let mor = math.op([Mor])
 #let mor(cat) = $M_#cat$
 #let op(cat) = $#cat^"op"$
+#let equ(m1, m2) = $"equ"(#m1, #m2)$
+#let coequ(m1, m2) = $"coequ"(#m1, #m2)$
+#let coker = math.op("coker", limits: false)
 
 #let obj = (
   tilde: $#h(0pt)tilde#h(3pt)$
 )
 
-#let dot(pos) = fl.node(pos, circle(stroke: black, fill: black, radius: 2pt))
+#let dot(pos, rad: 2pt) = fl.node(pos, circle(stroke: black, fill: black, radius: rad))
+
+#let one = {
+  h(1pt)
+  diagram(
+    node-inset: 1.5pt,
+    {
+      dot((0,0), rad: 1pt)
+      edge((0,0), (0,0), "->", bend: 150deg, loop-angle: 180deg)
+    }
+  )
+  h(1pt)
+}
+
+#let two = {
+  h(1pt)
+  diagram(
+    node-inset: 1.5pt,
+    {
+      let w = .4
+      dot((0,0), rad: 1pt)
+      dot((w,0), rad: 1pt)
+      edge((0,0), (w,0), "->", bend: 0deg)
+    }
+  )
+  h(1pt)
+}
 
 #let cat(n) = strong($#n$)
