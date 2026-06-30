@@ -4,7 +4,7 @@
 #let title-rule(
   title: [title]
 ) = doc => {
-  set page("a4", margin: 0.5in, numbering: "1")
+  set page("a4", margin: 0.5in)
   set text(size: 12pt, lang: "ru")
   set heading(numbering: "1.")
 
