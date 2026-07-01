@@ -1,9 +1,6 @@
-// #import "@local/theorem-shorthands-ru:0.0.0": *
 #import "common.typ": *
 #set page(numbering: "1")
 #show: title-rule(title: [Материал курса])
-
-// #import "@local/common:0.0.0": *
 
 #import "@local/theorem:0.0.0": *
 
